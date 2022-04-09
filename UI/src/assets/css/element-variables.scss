@@ -1,0 +1,111 @@
+/*
+  Copyright (C) 2022 Suwings <Suwings@outlook.com>
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  According to the AGPL, it is forbidden to delete all copyright notices, 
+  and if you modify the source code, you must open source the
+  modified source code.
+
+  版权所有 (C) 2022 Suwings <Suwings@outlook.com>
+
+  该程序是免费软件，您可以重新分发和/或修改据 GNU Affero 通用公共许可证的条款，
+  由自由软件基金会，许可证的第 3 版，或（由您选择）任何更高版本。
+
+  根据 AGPL 与用户协议，您必须保留所有版权声明，如果修改源代码则必须开源修改后的源代码。
+  可以前往 https://mcsmanager.com/ 阅读用户协议，申请闭源开发授权等。
+*/
+
+/*
+Write your variables here. All available variables can be
+found in element-plus/packages/theme-chalk/src/common/var.scss.
+For example, to overwrite the theme color:
+*/
+$--color-primary: #409eff;
+
+body,
+html {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    Arial, sans-serif;
+  margin: 0;
+  height: 100%;
+  background-color: #eef1f5;
+  color: #333;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.app {
+  height: 100%;
+}
+
+.el-container {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.el-menu {
+  border-right: 0px;
+}
+
+.el-menu-item {
+  height: 45px;
+  line-height: 45px;
+  transition: all 0.6s;
+  border-radius: 8px;
+  margin: 4px 0px;
+}
+
+.el-menu-item:hover {
+  background-color: rgb(66, 66, 66);
+}
+
+// .el-card.is-always-shadow {
+// box-shadow: 0 2px 4px 0 rgb(54 58 80 / 28%);
+// box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+// }
+
+.el-card {
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  border-radius: 0;
+  color: rgba(0, 0, 0, 0.9);
+
+  margin-bottom: 20px;
+  border: 1px solid #dcdfe6;
+}
+
+$item-group-margin: 5px;
+
+.el-button + .el-button {
+  margin-left: $item-group-margin;
+}
+
+.item-group-warpper {
+  margin: 0px -5px;
+}
+
+.item-responsive-group > * {
+  margin-left: $item-group-margin;
+  margin-right: $item-group-margin;
+  margin-bottom: $item-group-margin;
+  margin-top: $item-group-margin;
+}
+
+.item-responsive-group-only-lr > * {
+  margin-left: $item-group-margin;
+  margin-right: $item-group-margin;
+}
+
+.el-drawer__body {
+  padding: 0px;
+}
